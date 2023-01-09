@@ -1,0 +1,175 @@
+:root {
+    --color-sky: #CCEFFF;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.phone {
+    position: relative;
+    border: 8px solid black;
+    border-radius: 40px;
+    height: 600px;
+    width: 300px;
+    background: var(--color-sky);
+    box-shadow: 4px 4px 40px;
+    overflow: hidden;
+}
+
+.layer-1 {
+    position: absolute;
+    z-index: 1;
+    height: 450px;
+    width: 80px;
+    background: rgba(247, 103, 103, 0.5);
+    bottom: 0;
+    right: 60px;
+}
+
+.layer-2 {
+    position: absolute;
+    z-index: 2;
+    height: 450px;
+    width: 80px;
+    background: white;
+    bottom: 0;
+    left: 60px;
+}
+
+.layer-3 {
+    position: absolute;
+    z-index: 3;
+    height: 400px;
+    width: 220px;
+    background: wheat;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.layer-4 {
+    position: absolute;
+    z-index: 4;
+    height: 350px;
+    width: 80px;
+    background: white;
+    bottom: 0;
+    left: 50px;
+}
+
+.layer-5 {
+    position: absolute;
+    z-index: 5;
+    height: 300px;
+    width: 180px;
+    background: beige;
+    left: 0;
+    bottom: 0;
+}
+
+.layer-6 {
+    position: absolute;
+    z-index: 6;
+    height: 250px;
+    width: 80px;
+    background: white;
+    bottom: 0;
+    right: 50px;
+}
+
+.layer-7 {
+    position: absolute;
+    z-index: 7;
+    height: 200px;
+    width: 180px;
+    background: bisque;
+    right: 0;
+    bottom: 0;
+}
+
+.layer-8 {
+    position: absolute;
+    z-index: 8;
+    height: 110px;
+    width: 180px;
+    background: green;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.layer-9 {
+    position: absolute;
+    z-index: 9;
+    height: 100px;
+    width: 120px;
+    background: white;
+    left: 0;
+    bottom: 0;
+}
+
+.layer-10 {
+    position: absolute;
+    z-index: 10;
+    height: 100px;
+    width: 120px;
+    background: white;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* Diseño de panda */
+
+.left-ear-outer {
+    background: black;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+
+.rigth-ear-outer {
+    background: black;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 0;
+}
+
+.head {
+    background: white;
+    height: 70px;
+    width: 100%;
+    border-radius: 90%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 8px;
+}
+
+.head_eye {
+    background: black;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 20px;
+}
+
+.head_eye-left {
+    left: 27px;
+}
+
+.head_eye-right {
+    right: 27px;
+}
