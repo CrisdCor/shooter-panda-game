@@ -3,12 +3,61 @@
 }
 
 body {
+    counter-reset: score;
     margin: 0;
     height: 100vh;
     width: 100%;
     display: grid;
     place-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
 }
+
+h1{
+    font-size: 1.5rem;
+    margin: 0;
+
+}
+
+p{
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+input{
+    appearance: none;
+    cursor: pointer;
+    height: 50px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 80px;
+    z-index: 0;
+}
+
+input[type=checkbox]:focus{
+    appearance: none;
+    outline: none;
+}
+
+input:checked{
+    counter-increment: score;
+}
+
+.score{
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 36px;
+
+}
+p::after{
+    content: counter(score);
+    padding: 0 6px;
+    font-weight: 100;
+}
+
+
 
 .phone {
     position: relative;
@@ -29,31 +78,24 @@ body {
     bottom: 0;
     right: 60px;
 
-    animation-name: layer;
+    animation-name: panda1;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
 
-@keyframes layer{
+@keyframes panda1{
     0%{
         bottom: 0;
-
     }
 
     25%{
         bottom: -80px;
-
     }
 
     100%{
         bottom: 0;
-
     }
-}
-
-.layer-1 input[type=checkbox]{
-   
 }
 
 
@@ -63,9 +105,35 @@ body {
     z-index: 2;
     height: 450px;
     width: 80px;
-    
     bottom: 0;
     left: 60px;
+
+    animation-name: panda2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes panda2{
+    0%{
+        bottom: 0;
+    }
+
+    25%{
+        bottom: -80px;
+    }
+
+    50%{
+        bottom: -20px;
+    }
+
+    70%{
+        bottom: -80px;
+    }
+
+    100%{
+        bottom: 0;
+    }
 }
 
 .layer-3 {
@@ -73,11 +141,13 @@ body {
     z-index: 3;
     height: 400px;
     width: 220px;
-    background: wheat;
+    background: rgb(11, 112, 87);
     left: 0;
     right: 0;
     bottom: 0;
     margin: 0 auto;
+    border-top-left-radius: 16px;
+    border-top-right-radius:16px;
 }
 
 .layer-4 {
@@ -85,9 +155,27 @@ body {
     z-index: 4;
     height: 350px;
     width: 80px;
-    
     bottom: 0;
     left: 50px;
+
+    animation-name: panda3;
+    animation-duration: 2s;
+    animation-timing-function:ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes panda3{
+    0%{
+        bottom: 0;
+    }
+
+    25%{
+        bottom: -80px;
+    }
+
+    100%{
+        bottom: 0;
+    }
 }
 
 .layer-5 {
@@ -95,9 +183,11 @@ body {
     z-index: 5;
     height: 300px;
     width: 180px;
-    background: beige;
+    background: rgb(81, 163, 143);
     left: 0;
     bottom: 0;
+    border-top-left-radius: 16px;
+    border-top-right-radius:16px;
 }
 
 .layer-6 {
@@ -108,6 +198,34 @@ body {
     
     bottom: 0;
     right: 50px;
+
+    animation-name: panda4;
+    animation-duration: 2s;
+    animation-timing-function:ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes panda4{
+    0%{
+        bottom: 0;
+    }
+
+    25%{
+        bottom: -80px;
+    }
+
+    50%{
+        bottom: -20px;
+    }
+
+    70%{
+        bottom: -80px;
+    }
+
+    100%{
+        bottom: 0;
+        transition-delay: bottom 5s ;
+    }
 }
 
 .layer-7 {
@@ -115,9 +233,11 @@ body {
     z-index: 7;
     height: 200px;
     width: 180px;
-    background: bisque;
+    background: rgb(0, 255, 191);
     right: 0;
     bottom: 0;
+    border-top-left-radius: 16px;
+    border-top-right-radius:16px;
 }
 
 .layer-8 {
